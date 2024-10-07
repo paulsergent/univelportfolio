@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .grid-item {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .grid-item a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<header><h1>Paul Sergent Portfolio</h1></header>
+<body>
+    <div class="grid-container">
+        <div class="grid-item"><a href="#link1">Link 1</a></div>
+        <div class="grid-item"><a href="#link2">Link 2</a></div>
+        <div class="grid-item"><a href="#link3">Link 3</a></div>
+        <div class="grid-item"><a href="#link4">Link 4</a></div>
+        <div class="grid-item"><a href="#link5">Link 5</a></div>
+        <div class="grid-item"><a href="#link6">Link 6</a></div>
+    </div>
+</body>
+</html>
