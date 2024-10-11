@@ -3,18 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Paul Sergent Portfolio</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Press Start 2P', cursive;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
+            background-image: url('https://starwarsblog.starwars.com/wp-content/uploads/2015/11/star-wars-background.jpg');
+            background-size: cover;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
         }
         .grid-container {
             display: grid;
@@ -23,31 +36,38 @@
             width: 90%;
             max-width: 1200px;
             margin: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
         }
         .grid-item {
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.1);
             padding: 20px;
             text-align: center;
-            border: 1px solid #ddd;
+            border: 1px solid #444;
             border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
         .grid-item a {
             text-decoration: none;
-            color: #333;
+            color: #ffcc00;
             font-weight: bold;
+        }
+        .grid-item a:hover {
+            color: #fff;
+        }
+        h2{
+            font-size: medium;
         }
     </style>
 </head>
-<header><h1>Paul Sergent Portfolio</h1></header>
+<header><h1>Not Cassian Andor Portfolio</h1></header>
 <body>
     <div class="grid-container">
-        <div class="grid-item"><a href="#link1">Link 1</a></div>
-        <div class="grid-item"><a href="#link2">Link 2</a></div>
-        <div class="grid-item"><a href="#link3">Link 3</a></div>
-        <div class="grid-item"><a href="#link4">Link 4</a></div>
-        <div class="grid-item"><a href="#link5">Link 5</a></div>
-        <div class="grid-item"><a href="#link6">Link 6</a></div>
+        <div class="grid-item"><h2>My first assignment: a blog layout</h2><a href="https://paulsergent.github.io/blog/">click here to see</a></div>
+        <div class="grid-item"><h2>a page about some food types</h2><a href="https://paulsergent.github.io/septweek1/food">MM FOOD!</a></div>
+        <div class="grid-item"><h2>HTML Made flags!</h2><a href="https://paulsergent.github.io/web-excercises/countries/">Show me!</a></div>
+        <div class="grid-item"><h2>An HTML table about solar system planets</h2><a href="https://paulsergent.github.io/web-excercises/tables/">planets? really?</a></div>
     </div>
 </body>
 </html>
